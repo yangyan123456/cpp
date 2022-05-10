@@ -49,10 +49,31 @@ cmake_ninja_workdir = C$:\Users\12773\CLionProjects\cpp\cmake-build-debug\
 
 build cmake_object_order_depends_target_cpp: phony || CMakeFiles\cpp.dir
 
-build CMakeFiles\cpp.dir\const.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\const.cpp || cmake_object_order_depends_target_cpp
+build CMakeFiles\cpp.dir\const\const.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\const\const.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\const
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\static.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\static.cpp || cmake_object_order_depends_target_cpp
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\const\function_const.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\const\function_const.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\const
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\const\const_pointer.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\const\const_pointer.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\const
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
@@ -64,7 +85,7 @@ build CMakeFiles\cpp.dir\const.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\
 #############################################
 # Link the executable cpp.exe
 
-build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const.cpp.obj
+build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const\const.cpp.obj CMakeFiles\cpp.dir\static.cpp.obj CMakeFiles\cpp.dir\const\function_const.cpp.obj CMakeFiles\cpp.dir\const\const_pointer.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

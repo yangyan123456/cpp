@@ -3,4 +3,4 @@ project(cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(cpp "const.cpp")
+add_executable(cpp "const/const.cpp" static.cpp "const/function_const.cpp" const/const_pointer.cpp)

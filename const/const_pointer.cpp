@@ -3,7 +3,7 @@
 //
 
 
-int const_pointer() {
+void const_pointer() {
     int a = 1, a1 = 5;
 //    1. 指向常量的指针, 不能修改值，但可以修改指向
     const int *ptr1 = &a;

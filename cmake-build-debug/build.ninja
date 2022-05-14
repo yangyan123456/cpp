@@ -56,10 +56,10 @@ build CMakeFiles\cpp.dir\const\const.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
-build CMakeFiles\cpp.dir\static.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\static.cpp || cmake_object_order_depends_target_cpp
+build CMakeFiles\cpp.dir\static\static.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\static\static.cpp || cmake_object_order_depends_target_cpp
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
   OBJECT_DIR = CMakeFiles\cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\static
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
@@ -77,6 +77,48 @@ build CMakeFiles\cpp.dir\const\const_pointer.cpp.obj: CXX_COMPILER__cpp_Debug C$
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
+build CMakeFiles\cpp.dir\test.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\test.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\concurrency\std_mutex.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_mutex.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\concurrency\std_thread.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_thread.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\concurrency\std_atomic.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_atomic.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\concurrency\std_condition_variable.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_condition_variable.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\concurrency\std_semaphore.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_semaphore.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cpp
@@ -85,7 +127,7 @@ build CMakeFiles\cpp.dir\const\const_pointer.cpp.obj: CXX_COMPILER__cpp_Debug C$
 #############################################
 # Link the executable cpp.exe
 
-build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const\const.cpp.obj CMakeFiles\cpp.dir\static.cpp.obj CMakeFiles\cpp.dir\const\function_const.cpp.obj CMakeFiles\cpp.dir\const\const_pointer.cpp.obj
+build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const\const.cpp.obj CMakeFiles\cpp.dir\static\static.cpp.obj CMakeFiles\cpp.dir\const\function_const.cpp.obj CMakeFiles\cpp.dir\const\const_pointer.cpp.obj CMakeFiles\cpp.dir\test.cpp.obj CMakeFiles\cpp.dir\concurrency\std_mutex.cpp.obj CMakeFiles\cpp.dir\concurrency\std_thread.cpp.obj CMakeFiles\cpp.dir\concurrency\std_atomic.cpp.obj CMakeFiles\cpp.dir\concurrency\std_condition_variable.cpp.obj CMakeFiles\cpp.dir\concurrency\std_semaphore.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

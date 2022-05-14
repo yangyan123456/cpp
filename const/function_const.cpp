@@ -18,7 +18,7 @@ void func2(const int& a, int& a1){
     a1 =2;
 }
 
-int function(){
+void function(){
     int a = 10, a1 = 13, f = 99;
     int *fp = &f;
     const int * ptr1 = &a;

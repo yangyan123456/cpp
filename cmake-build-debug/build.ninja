@@ -50,72 +50,135 @@ cmake_ninja_workdir = C$:\Users\12773\CLionProjects\cpp\cmake-build-debug\
 build cmake_object_order_depends_target_cpp: phony || CMakeFiles\cpp.dir
 
 build CMakeFiles\cpp.dir\const\const.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\const\const.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\const
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\static\static.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\static\static.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\static
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\const\function_const.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\const\function_const.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\const
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\const\const_pointer.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\const\const_pointer.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\const
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\test.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\test.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\concurrency\std_mutex.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_mutex.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\concurrency\std_thread.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_thread.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\concurrency\std_atomic.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_atomic.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\concurrency\std_condition_variable.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_condition_variable.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
 build CMakeFiles\cpp.dir\concurrency\std_semaphore.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\concurrency\std_semaphore.cpp || cmake_object_order_depends_target_cpp
-  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++14
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
   OBJECT_DIR = CMakeFiles\cpp.dir
   OBJECT_FILE_DIR = CMakeFiles\cpp.dir\concurrency
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\algorithm\quicksort.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\algorithm\quicksort.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\algorithm
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term1.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term1.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term2.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term2.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term3.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term3.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term4.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term4.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term5.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term5.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term6.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term6.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term7.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term7.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term8.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term8.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
@@ -127,7 +190,7 @@ build CMakeFiles\cpp.dir\concurrency\std_semaphore.cpp.obj: CXX_COMPILER__cpp_De
 #############################################
 # Link the executable cpp.exe
 
-build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const\const.cpp.obj CMakeFiles\cpp.dir\static\static.cpp.obj CMakeFiles\cpp.dir\const\function_const.cpp.obj CMakeFiles\cpp.dir\const\const_pointer.cpp.obj CMakeFiles\cpp.dir\test.cpp.obj CMakeFiles\cpp.dir\concurrency\std_mutex.cpp.obj CMakeFiles\cpp.dir\concurrency\std_thread.cpp.obj CMakeFiles\cpp.dir\concurrency\std_atomic.cpp.obj CMakeFiles\cpp.dir\concurrency\std_condition_variable.cpp.obj CMakeFiles\cpp.dir\concurrency\std_semaphore.cpp.obj
+build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const\const.cpp.obj CMakeFiles\cpp.dir\static\static.cpp.obj CMakeFiles\cpp.dir\const\function_const.cpp.obj CMakeFiles\cpp.dir\const\const_pointer.cpp.obj CMakeFiles\cpp.dir\test.cpp.obj CMakeFiles\cpp.dir\concurrency\std_mutex.cpp.obj CMakeFiles\cpp.dir\concurrency\std_thread.cpp.obj CMakeFiles\cpp.dir\concurrency\std_atomic.cpp.obj CMakeFiles\cpp.dir\concurrency\std_condition_variable.cpp.obj CMakeFiles\cpp.dir\concurrency\std_semaphore.cpp.obj CMakeFiles\cpp.dir\algorithm\quicksort.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term1.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term2.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term3.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term4.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term5.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term6.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term7.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term8.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -138,17 +201,6 @@ build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const\const.c
   TARGET_FILE = cpp.exe
   TARGET_IMPLIB = cpp.lib
   TARGET_PDB = cpp.pdb
-
-
-#############################################
-# Utility command for edit_cache
-
-build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\12773\CLionProjects\cpp\cmake-build-debug && D:\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build edit_cache: phony CMakeFiles\edit_cache.util
 
 
 #############################################
@@ -163,9 +215,58 @@ build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
+# Object build statements for EXECUTABLE target test
+
+
+#############################################
+# Order-only phony target for test
+
+build cmake_object_order_depends_target_test: phony || CMakeFiles\test.dir
+
+build CMakeFiles\test.dir\test.cpp.obj: CXX_COMPILER__test_Debug C$:\Users\12773\CLionProjects\cpp\test.cpp || cmake_object_order_depends_target_test
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\test.dir
+  OBJECT_FILE_DIR = CMakeFiles\test.dir
+  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
+  TARGET_PDB = test.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test
+
+
+#############################################
+# Link the executable test.exe
+
+build test.exe: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles\test.dir\test.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\test.dir\
+  TARGET_FILE = test.exe
+  TARGET_IMPLIB = test.lib
+  TARGET_PDB = test.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\12773\CLionProjects\cpp\cmake-build-debug && D:\apps\CLion\ch-0\213.7172.20\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles\edit_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build cpp: phony cpp.exe
+
+build test: phony test.exe
 
 # =============================================================================
 # Folder targets.
@@ -175,7 +276,7 @@ build cpp: phony cpp.exe
 #############################################
 # Folder: C:/Users/12773/CLionProjects/cpp/cmake-build-debug
 
-build all: phony cpp.exe
+build all: phony cpp.exe test.exe
 
 # =============================================================================
 # Built-in targets

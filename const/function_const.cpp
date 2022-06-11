@@ -32,6 +32,8 @@ void function(){
     func2(a,a1);
     cout << a <<":\t" << a1 <<endl;
 
+    max(a,a1);
+
 }
 
 

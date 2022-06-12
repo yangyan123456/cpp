@@ -193,3 +193,28 @@ int findKthLargest(vector<int>& nums, int k) {
 //}
 
 
+//class Solution {
+//private:
+//    int m, n;
+//public:
+//    int minPathCost(vector<vector<int>>& grid, vector<vector<int>>& moveCost) {
+//        // 贪心遍历
+//        m = grid[0].size(), n = grid.size();
+//        int cnt = 0, pos = 0, ans = INT_MAX;
+//        for(int i = 0; i < m - 1; ++i) {
+//            cnt = 0;
+//            pos = i;
+//            for(int j = 1; j < n; ++j) {
+//                int idx = min_element(moveCost[pos].begin(), moveCost[pos].end()) - moveCost[pos].begin();
+//                cnt += moveCost[pos][idx];
+//                pos = grid[pos+1][idx];
+//            }
+//            ans = min(ans, cnt);
+//        }
+//        return ans;
+//    }
+//};
+//
+
+
+

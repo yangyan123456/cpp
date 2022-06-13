@@ -217,4 +217,18 @@ int findKthLargest(vector<int>& nums, int k) {
 //
 
 
+class A
+{
+public:
+    mutable double var;
+    void setVar(double a)
+    {
+        var = a;
+    }
+
+    operator int()//将类A对象隐式转化为int类型
+    {
+        return var;
+    }
+};
 

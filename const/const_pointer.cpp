@@ -1,8 +1,3 @@
-//
-// Created by user on 2022-05-10.
-//
-
-
 // TODO  在星号左边，则指向的数据是常量； 在星号右边，则指针是常量
 
 void const_pointer() {

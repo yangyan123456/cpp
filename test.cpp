@@ -1,4 +1,3 @@
-
 #include <vector>
 #include <algorithm>
 #include <iostream>
@@ -217,4 +216,46 @@ int findKthLargest(vector<int>& nums, int k) {
 //
 
 
+//class A
+//{
+//public:
+//    mutable double var;
+//    void setVar(double a)
+//    {
+//        var = a;
+//    }
+//
+//    operator int()//将类A对象隐式转化为int类型
+//    {
+//        return var;
+//    }
+//};
+//
+//int main() {
+//    string a;
+//    cout << a.length() << endl;
+//}
 
+
+
+
+#include <vector>
+#include <new>
+#include <string>
+#include <iostream>
+
+int main() {
+    char mem[100];
+    mem[0] = 'a';
+    mem[1] = 'b';
+    mem[2] = 'c';
+    mem[3] = 'd';
+    char* p = mem;
+    std::cout << *p << std::endl;
+    int * a = new(mem) int[100];
+    *a = 98;
+    std::cout << *a << std::endl;
+    std::cout << *p << std::endl;
+    bool *b = new(a) bool[100];
+    std::cout << *b << std::endl;
+}

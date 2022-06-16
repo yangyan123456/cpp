@@ -336,6 +336,41 @@ build CMakeFiles\cpp.dir\effectiveC++\term30.cpp.obj: CXX_COMPILER__cpp_Debug C$
   TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
   TARGET_PDB = cpp.pdb
 
+build CMakeFiles\cpp.dir\effectiveC++\term31.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term31.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term32.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term32.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term33.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term33.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term34.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term34.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
+build CMakeFiles\cpp.dir\effectiveC++\term35.cpp.obj: CXX_COMPILER__cpp_Debug C$:\Users\12773\CLionProjects\cpp\effectiveC++\term35.cpp || cmake_object_order_depends_target_cpp
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd -std:c++20
+  OBJECT_DIR = CMakeFiles\cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\cpp.dir\effectiveC++
+  TARGET_COMPILE_PDB = CMakeFiles\cpp.dir\
+  TARGET_PDB = cpp.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cpp
@@ -344,7 +379,7 @@ build CMakeFiles\cpp.dir\effectiveC++\term30.cpp.obj: CXX_COMPILER__cpp_Debug C$
 #############################################
 # Link the executable cpp.exe
 
-build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const\const.cpp.obj CMakeFiles\cpp.dir\static\static.cpp.obj CMakeFiles\cpp.dir\const\function_const.cpp.obj CMakeFiles\cpp.dir\const\const_pointer.cpp.obj CMakeFiles\cpp.dir\test.cpp.obj CMakeFiles\cpp.dir\concurrency\std_mutex.cpp.obj CMakeFiles\cpp.dir\concurrency\std_thread.cpp.obj CMakeFiles\cpp.dir\concurrency\std_atomic.cpp.obj CMakeFiles\cpp.dir\concurrency\std_condition_variable.cpp.obj CMakeFiles\cpp.dir\concurrency\std_semaphore.cpp.obj CMakeFiles\cpp.dir\algorithm\quicksort.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term1.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term2.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term3.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term4.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term5.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term6.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term7.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term8.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term9.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term10.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term11.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term12.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term13.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term14.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term15.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term16.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term17.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term18.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term19.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term20.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term21.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term22.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term23.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term24.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term25.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term26.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term27.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term28.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term29.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term30.cpp.obj
+build cpp.exe: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles\cpp.dir\const\const.cpp.obj CMakeFiles\cpp.dir\static\static.cpp.obj CMakeFiles\cpp.dir\const\function_const.cpp.obj CMakeFiles\cpp.dir\const\const_pointer.cpp.obj CMakeFiles\cpp.dir\test.cpp.obj CMakeFiles\cpp.dir\concurrency\std_mutex.cpp.obj CMakeFiles\cpp.dir\concurrency\std_thread.cpp.obj CMakeFiles\cpp.dir\concurrency\std_atomic.cpp.obj CMakeFiles\cpp.dir\concurrency\std_condition_variable.cpp.obj CMakeFiles\cpp.dir\concurrency\std_semaphore.cpp.obj CMakeFiles\cpp.dir\algorithm\quicksort.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term1.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term2.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term3.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term4.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term5.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term6.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term7.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term8.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term9.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term10.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term11.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term12.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term13.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term14.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term15.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term16.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term17.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term18.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term19.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term20.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term21.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term22.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term23.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term24.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term25.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term26.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term27.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term28.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term29.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term30.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term31.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term32.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term33.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term34.cpp.obj CMakeFiles\cpp.dir\effectiveC++\term35.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

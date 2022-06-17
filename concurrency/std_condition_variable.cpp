@@ -17,46 +17,45 @@
 //
 //std::deque<int> q;
 //
-//void producer(){
+//void producer() {
 //    int i = 0;
-//    while(true) {
-//        std::unique_lock<std::mutex> lock(mtx1);
+//    while (true) {
+//        std::unique_lock<std::mutex> lck(mtx1);
 //        q.push_back(i);
-//        //cond.notify_all();
-//        if(i < 9999999) {
-//            i++;
-//        }
-//        else --i;
+//        cout << "producer : " << q.front() << " :::" << i<< endl;
+//        cond.notify_one();
+//        ++i;
 //    }
 //}
+//
 //
 //void consumer() {
-//    int data, cnt = 0;
-//
-//    std::unique_lock<std::mutex> lock(mtx1);
-//    while(!q.empty() && cnt < 5) {
-//        data = q.front();
+//    while (true) {
+//        std::unique_lock<std::mutex> lck(mtx1);
+////        cond.wait(lck, []() { return !q.empty(); });
+//        cond.wait(lck, []() { return !q.empty();});
+//        cout << "consumer : " << q.front() << endl;
 //        q.pop_front();
-//        std::cout << std::this_thread::get_id << "\t:\t" << data << endl;
-//        std::this_thread::sleep_for(std::chrono::microseconds(10));
-//        ++cnt;
+//        cond.notify_one();
 //    }
-//    std::cout <<  std::this_thread::get_id << "\tnone" << endl;
-//
 //}
+//
+//
 //
 //int main() {
 //    std::thread p1(producer);
+//    std::thread p2(producer);
+//    std::thread p3(producer);
 //    std::thread t2(consumer);
 //    std::thread t3(consumer);
 //    std::thread t4(consumer);
-//    std::thread t5(consumer);
 //    p1.detach();
+//    p2.detach();
+//    p3.detach();
 //    t2.join();
 //    t3.join();
 //    t4.join();
-//    t5.join();
 //
-//
+//    return 0;
 //
 //}

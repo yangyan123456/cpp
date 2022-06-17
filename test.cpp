@@ -244,18 +244,4 @@ int findKthLargest(vector<int>& nums, int k) {
 #include <string>
 #include <iostream>
 
-int main() {
-    char mem[100];
-    mem[0] = 'a';
-    mem[1] = 'b';
-    mem[2] = 'c';
-    mem[3] = 'd';
-    char* p = mem;
-    std::cout << *p << std::endl;
-    int * a = new(mem) int[100];
-    *a = 98;
-    std::cout << *a << std::endl;
-    std::cout << *p << std::endl;
-    bool *b = new(a) bool[100];
-    std::cout << *b << std::endl;
-}
+

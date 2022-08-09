@@ -7,11 +7,8 @@
 #include <vector>
 #include<stdio.h>
 #include <time.h>
-#include <Windows.h>
 
-typedef unsigned __int16 uint16_t;
-typedef unsigned __int32 uint32_t;
-typedef unsigned __int64 uint64_t;
+
 
 using namespace  std;
 
@@ -79,13 +76,33 @@ public:
     }
 };
 
+
+
+void quickSort(vector<int>& nums, int l, int r){
+    if(l > r) return;
+    int i = l, j = r;
+    while(i < j){
+        while(nums[j] >= nums[l] && i < j){
+            j--;
+        }
+        while(nums[i] <= nums[l] && i < j){
+            i++;
+        }
+        swap(nums[j], nums[i]);
+    }
+    swap(nums[l],nums[i]);
+    quickSort(nums, l, i - 1);
+    quickSort(nums, i + 1, r);
+}
+
+
+
+
+
 //int main(){
 //    vector<int> nums {23,45,17,11,13,89,72,26,3,17,11,13};
-//    vector<int> nums1 {23,45,17,11,13,89,72,26,3,17,11,13};
-//    Qsort * q = new Qsort;
-//
-//    q->quick_sort(nums, 0 , nums.size() - 1);
-//    q->random_quick_sort(nums1, 0 , nums.size() - 1);
-//
-//    delete q;
+//    quickSort(nums, 0, nums.size() - 1);
+//    for(auto i : nums){
+//        cout << i << " ";
+//    }
 //}

@@ -13,7 +13,8 @@ constexpr int x1 = a;
 
 #define b 1.2;
 const float a2 = 1.2;
-constexpr float xb1 = b;    // 字符串替换，可以赋值
+constexpr float xb1 = b;        // 字符串替换，可以赋值
+const float b2 = a2;        // 可以赋值
 //constexpr float x2 = a2;    //这里a2不是整形，不是常量表达式，所以不能进行赋值
 
 

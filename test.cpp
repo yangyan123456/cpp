@@ -1,247 +1,355 @@
+#include <iostream>
+#include <string>
 #include <vector>
 #include <algorithm>
-#include <iostream>
-#include <queue>
-#include <string>
-#include "test.h"
-#include <bitset>
-#include <unordered_map>
 #include <unordered_set>
-#include <typeinfo>
-#include <functional>
+#include <unordered_map>
+#include <map>
 #include <random>
-
-
+#include <memory>
+#include <set>
+#include <stack>
+#include <boost/asio.hpp>
 using namespace std;
 
-//交换两个数
-//void swap(vector<int> &arr,int i,int j) {
-//    int temp = arr[i];
-//    arr[i] = arr[j];
-//    arr[j] = temp;
-//}
-
-////再次调整为大顶堆
-//void heapify(vector<int> &arr,int index,int heapsize) {
-//    int son = index * 2 + 1;
-//    while(son < heapsize)
-//    {
-//        int sonLargest = son + 1 < heapsize && arr[son + 1] > arr[son] ? son + 1 : son; // 正好是它的子节点
-//        sonLargest = arr[sonLargest] > arr[index] ? sonLargest : index;
-//        if (index == sonLargest)
-//            break;
-//        swap(arr, index, sonLargest);
-//        index = sonLargest;
-//        son = index * 2 + 1;
-//    }
-//}
-//
-//
-////变为大顶堆
-//void heapinsert(vector<int> &arr,int index) {
-//    while(arr[index] > arr[(index-1)/2]) {
-//        swap(arr,index,(index-1)/2);
-//        index = (index-1)/2;
-//    }
-//}
-//
-////排序
-//void heapsort(vector<int> &arr)
-//{
-//    if (arr.size()<2) return;
-//    for (int i=0;i<arr.size();i++) heapinsert(arr,i);
-//
-//    int heapsize = arr.size();
-//    swap(arr,0,--heapsize);
-//    while(heapsize>0)
-//    {
-//        heapify(arr,0,heapsize);
-//        swap(arr,0,--heapsize);
-//    }
-//
-//}
-//
-
-//void swap(vector<int>& arr, int i, int j) {
-//    int temp = arr[i];
-//    arr[i] = arr[j];
-//    arr[j] = temp;
-//}
-//
-//
-//void heapCreate(vector<int>& arr, int index){
-//    // 将数组变成大根堆，保证index比(index-1/2)小， 即son节点的值小于parent
-//    while(arr[index] > arr[(index - 1) / 2]) {
-//        swap(arr, index, (index -1) / 2);
-//        index = (index - 1) / 2;
-//    }
-//}
-//
-//
-//void heapAdjust(vector<int>& arr, int index, int size) {
-//    int son = index * 2 + 1;
-//    while(son < size) {
-//        int sonMax = (son + 1 < size) && arr[son + 1] > arr[son] ? son + 1 : son;
-//        if(arr[sonMax] <= arr[index]) break;
-//        swap(arr, index, sonMax);
-//        index = sonMax;
-//        son = index * 2 + 1;
-//    }
-//}
-//
-//void heapSort(vector<int>& arr) {
-//    // 1. 变成大根堆
-//    for (int i = 0; i < arr.size(); ++i) {
-//        heapCreate(arr, i);
-//    }
-//    // 2.调整大根堆
-//    int n = arr.size();
-//    for(int i = n - 1; i > 0; --i) {
-//        swap(arr,0, i);
-//        heapAdjust( arr, 0, i);
-//    }
-//}
-//
-//
-//
-//int main()
-//{
-//    vector<int> arr {49,38,65,97,76,13,27,49,10};
-//
-//    heapSort(arr);
-//
-//    for(int i=0;i<arr.size();i++) cout<<arr[i]<<" ";
-//    return 0;
-//}
-
-
-// TODO 线段树
-//void buildTree(vector<int>& arr, vector<int>& tree, int s, int e, int index){
-//    if(s == e){
-//        tree[index] = arr[s];
-//        return;
-//    }
-//    int mid = (s + e) / 2;
-//    buildTree(arr, tree, s, mid, 2 * index);
-//    buildTree(arr, tree, mid + 1, e, 2 * index + 1);
-//    tree[index] = tree[2 * index] + tree[2 * index + 1];
-//}
-//
-//int query(vector<int>& tree, int s, int e, int l, int r, int index){
-//    if(l > e || r < s)
-//        return 0;
-//    if(s >= l && e <= r)    // 在区间内，不需要再细分
-//        return tree[index];
-//    int mid = (s + e) / 2;
-//    return query(tree, s, mid, l, r, 2 * index + 1) + query(tree, mid + 1, e, l, r, 2 * index + 2);
-//}
-//
-//void update(vector<int>& tree, int s, int e, int index, int val){
-//    // 递归来实现所有包含该更新点的路径都变化相应值
-//    if(s == e){
-//        tree[index] = val;
-//        return;
-//    }
-//    int mid = (s + e) / 2;
-//    update(tree, s, mid, 2 * index + 1, val);
-//    update(tree, mid + 1, e, 2 * index + 2, val);
-//    tree[index] = tree[2 * index + 1] + tree[2 * index + 2];
-//}
-
-
-// 每日一遍堆排序
-void maxHeapify(vector<int>& arr, int idx, int n) {
-    int left = 2 * idx + 1, right = 2 * idx + 2;    // 两个子节点
-    int largest = idx;
-
-    if(left < n && arr[left] > arr[largest]) {
-        largest = left;
-    }
-    if(right < n && arr[right] > arr[largest]) {
-        largest = right;
-    }
-    if(largest != idx) {   // 发生了交换，说明idx的值比子节点要小，进行交换，并接着判断是否需要往下移动
-        swap(arr[largest], arr[idx]);
-        maxHeapify(arr, largest, n);
-    }
-}
-
-void buildMaxHeap(vector<int>& arr, int n) { // n是arr的size
-    for(int i = n / 2; i >= 0; --i) {   // 从最后一个根节点开始转化
-        maxHeapify(arr, i, n);
-    }
-}
-
-// 找到第K大的元素
-int findKthLargest(vector<int>& nums, int k) {
-    size_t n = nums.size();
-    buildMaxHeap(nums, n);
-    for(int i = nums.size() - 1; i >= nums.size() - k + 1; --i) {
-        swap(nums[0], nums[i]);
-        n--;
-        maxHeapify(nums, 0, n);
-    }
-    return nums[0];
-}
-
 //int main() {
-//    vector<int> nums{3,2,1,5,6,4};
-//    int a = findKthLargest(nums, 2);
-//    cout << a << endl;
+//
+//    vector<string> ss;
+//    for(int i = 0; i < 10; ++i) {
+//        string s;
+//        cin >> s;
+//        ss.push_back(s);
+//    }
+//
+//    for(int i = 0; i < 10; ++i) {
+//        string s = ss[i];
+//        int n = s.size();
+//        vector<int> rr(n + 1);  // r后缀
+//        vector<int> bl(n + 1);  // b前缀
+//
+//        vector<int> rl(n + 1);  // r前缀
+//        vector<int> br(n + 1);  // b后缀
+//
+//        bl[1] = s[0] == 'b' ?  1 : 0;
+//        rl[1] = s[0] == 'r' ?  1 : 0;
+//        for(int i = 1; i < n; ++i){
+//            bl[i + 1] = bl[i];
+//            rl[i + 1] = rl[i];
+//            s[i] == 'r' ? rl[i + 1] += 1 : bl[i + 1] += 1;
+//        }
+//        for(int i = n - 1; i >= 0; --i){
+//            rr[i] = rr[i + 1];
+//            br[i] = br[i + 1];
+//            s[i] == 'r' ? rr[i] += 1 : br[i] += 1;
+//        }
+//
+//        int ans = INT_MAX;
+//        for(int i = 0; i <= n; ++i){
+//            ans = min({ans, rr[i] + bl[i], rl[i] + br[i]});
+//        }
+//        cout << ans << endl;
+//    }
+//
+//        cout << "-----------" << endl;
+//    for(int i = 0; i < 10; ++i) {
+//        string s = ss[i];
+//        int n = s.size();
+//        vector<int> dp(4, 0);
+//        // dp[0] 全红
+//        // dp[1] 全蓝
+//        // dp[2] 红蓝
+//        // dp[3] 蓝红
+//
+//        for(auto& c : s) {
+//            if(c == 'r') {
+//                dp[3] = min(dp[1], dp[3]);
+//                dp[2] = min(dp[2] + 1, dp[0]);
+//                dp[1] = dp[1] + 1;
+//            }
+//            else {
+//                dp[3] = min(dp[1], dp[3] + 1);
+//                dp[2] = min(dp[0], dp[2]);
+//                dp[0] = dp[0] + 1;
+//            }
+//        }
+//
+//        int ans = min({dp[0], dp[1], dp[2], dp[3]});
+//        cout << ans << endl;
+//    }
+
+
+//    vector<int> rr(n + 1);  // r后缀
+//    vector<int> bl(n + 1);  // b前缀
+//
+//    vector<int> rl(n + 1);  // r前缀
+//    vector<int> br(n + 1);  // b后缀
+//
+//    bl[1] = s[0] == 'b' ?  1 : 0;
+//    rl[1] = s[0] == 'r' ?  1 : 0;
+//    for(int i = 1; i < n; ++i){
+//        bl[i + 1] = bl[i];
+//        rl[i + 1] = rl[i];
+//        s[i] == 'r' ? rl[i + 1] += 1 : bl[i + 1] += 1;
+//    }
+//    for(int i = n - 1; i >= 0; --i){
+//        rr[i] = rr[i + 1];
+//        br[i] = br[i + 1];
+//        s[i] == 'r' ? rr[i] += 1 : br[i] += 1;
+//    }
+//
+//    int ans = INT_MAX;
+//    for(int i = 0; i <= n; ++i){
+//        ans = min({ans, rr[i] + bl[i], rl[i] + br[i]});
+//    }
+//    cout << ans << endl;
+//}
+
+
+
+//    int n;
+//    string s;
+//    cin >> n;
+//    s.resize(n);
+//    cin.ignore();
+//    getline(cin, s);
+
+
+
+//    string s;
+//    s = "rbrbrbrrrrbbbbrrrrbbbbrrbbb";
+//    int n = s.size();
+//
+//    vector<int> rr(n + 1);  // r后缀
+//    vector<int> bl(n + 1);  // b前缀
+//
+//    vector<int> rl(n + 1);  // r前缀
+//    vector<int> br(n + 1);  // b后缀
+//
+//    bl[1] = s[0] == 'b' ?  1 : 0;
+//    rl[1] = s[0] == 'r' ?  1 : 0;
+//    for(int i = 1; i < n; ++i){
+//        bl[i + 1] = bl[i];
+//        rl[i + 1] = rl[i];
+//        s[i] == 'r' ? rl[i + 1] += 1 : bl[i + 1] += 1;
+//    }
+//    for(int i = n - 1; i >= 0; --i){
+//        rr[i] = rr[i + 1];
+//        br[i] = br[i + 1];
+//        s[i] == 'r' ? rr[i] += 1 : br[i] += 1;
+//    }
+//
+//    int ans = INT_MAX;
+//    for(int i = 0; i <= n; ++i){
+//        ans = min({ans, rr[i] + bl[i], rl[i] + br[i]});
+//    }
+//    cout << ans << endl;
+
+
+//int T;
+//int a1, b1, c1, a2, b2, c2;
+//cin >> T;
+//while(T--) {
+//cin >> a1 >> b1 >> c1 >> a2 >> b2 >> c2;
+//long long  cnt1 = (c1 / a1 + c1 % a1 == 0 ? 0 : 1) * b1;
+//long long  cnt2 = (c2 / a2 + c2 % a2 == 0 ? 0 : 1) * b2;
+//if (cnt1 > cnt2) {
+//cout << "B" << endl;
+//} else if (cnt1 < cnt2) {
+//cout << "A" << endl;
+//} else {
+//cout << "A&B" << endl;
+//}
+//}
+
+//bool isSame(vector<string>& big, vector<string>& sma, int x, int y, int n){
+//    for(int i = 0; i < n; ++i){
+//       for(int j = 0; j < n; ++j){
+//           if(big[x + i][y + j] != sma[i][j]){
+//               return false;
+//           }
+//       }
+//    }
+//    return true;
+//}
+//
+//
+//void solve(vector<string>& big, vector<string>& sma, int m, int n) {
+//    for(int i = 0; i <= m - n; ++i) {
+//        for(int j = 0; j <= m - n; ++j) {
+//            if(big[i][j] == sma[0][0] && isSame(big, sma, i, j, n)) {
+//                cout << "YES" << endl;
+//                return;
+//            }
+//        }
+//    }
+//    cout << "NO" << endl;
+//}
+//
+//int main() {
+//    int T;
+//    cin >> T;
+//
+//    while(T--) {
+//        int m; int n;
+//        vector<string> big, sma;
+//        cin >> m >> n;
+//        cin.ignore();
+//        for(int i = 0; i < m; ++i) {
+//            string s;
+//            getline(cin, s);
+//            big.push_back(s);
+//        }
+//        for(int i = 0; i < n; ++i) {
+//            string s;
+//            getline(cin, s);
+//            sma.push_back(s);
+//        }
+//        solve(big, sma, m, n);
+//    }
+//    return 0;
+//}
+
+//constexpr int MOD = 998244353;
+//int main() {
+//    int n;
+//    cin >> n;
+//    int a1, b1, a2, b2;
+//    cin >> a1 >> b1 >> a2 >> b2;
+//    a1--, a2--, b1--, b2--;
+//    set<pair<int, int>> ust;
+//    ust.insert({a1, b1});
+//    ust.insert({a2, b2});
+//    vector<int> dp(n, 1);
+//    if( a1 == 0 && b1 == 0 || a1 == n - 1 && b1 == n - 1 ||
+//        a2 == 0 && b2 == 0 || a2 == n - 1 && b2 == n - 1) {
+//        return 0;
+//    }
+//    if(a1 == 0)dp[b1] = 0;
+//    if(a2 == 0)dp[b2] = 0;
+//
+//    for(int i = 1; i < n; ++i) {
+//        if(ust.count({i, 0})) dp[0] = 0;
+//        for(int j = 1; j < n; ++j) {
+//           if(ust.count({i, j})) dp[j] = 0;
+//           else {
+//               dp[j] = (dp[j - 1] + dp[j]) % MOD;
+//           }
+//        }
+//    }
+//    cout << dp[n - 1] << endl;
+//    return 0;
+//}
+
+// 括号有效的最长前缀长度
+//int main() {
+//    int n;
+//    cin >> n;
+//    string s;
+//    cin >> s;
+//    stack<char> st;
+//    int ans = 0, temp = 0;
+//    for(int i = 0; i < n; ++i) {
+//        if (s[i] == '(') st.push('(');
+//        else {
+//            if (st.empty()) {
+//                break;
+//            }
+//            else {
+//                st.pop();
+//                temp += 2;
+//                if(st.empty())  // 如果栈空，则说明是前缀
+//                    ans = max(ans, temp);
+//            }
+//        }
+//    }
+//    cout << ans << endl;
 //    return 0;
 //}
 
 
-//class Solution {
-//private:
-//    int m, n;
-//public:
-//    int minPathCost(vector<vector<int>>& grid, vector<vector<int>>& moveCost) {
-//        // 贪心遍历
-//        m = grid[0].size(), n = grid.size();
-//        int cnt = 0, pos = 0, ans = INT_MAX;
-//        for(int i = 0; i < m - 1; ++i) {
-//            cnt = 0;
-//            pos = i;
-//            for(int j = 1; j < n; ++j) {
-//                int idx = min_element(moveCost[pos].begin(), moveCost[pos].end()) - moveCost[pos].begin();
-//                cnt += moveCost[pos][idx];
-//                pos = grid[pos+1][idx];
-//            }
-//            ans = min(ans, cnt);
-//        }
-//        return ans;
-//    }
-//};
-//
-
-
-//class A
-//{
-//public:
-//    mutable double var;
-//    void setVar(double a)
-//    {
-//        var = a;
-//    }
-//
-//    operator int()//将类A对象隐式转化为int类型
-//    {
-//        return var;
-//    }
-//};
-//
 //int main() {
 //    string a;
-//    cout << a.length() << endl;
+//    string b;
+//    getline(cin, a);    // 输入a
+//    getline(cin, b);    // 输入b
+//
+//    int n1 = a.size(), n2 = b.size();
+//
+//    vector<vector<int>> dp(n1 + 1, vector<int>(n2 + 1));    // 二维dp矩阵
+//    for (int i = 0; i < n1; ++i) {
+//        for (int j = 0; j < n2; ++j) {
+//            if (a[i] == b[j]) {
+//                dp[i + 1][j + 1] = dp[i][j] + 1;
+//            }
+//            else {
+//                dp[i + 1][j + 1] = max(dp[i][j + 1], dp[i + 1][j]);
+//            }
+//        }
+//    }
+//    cout << dp[n1][n2] * 2;
+//}
+//int f(int a) {      // 计算阶乘
+//    if(a == 0) return 0;
+//    int res = 1;
+//    while(a > 1) {
+//        res *= a;
+//        --a;
+//    }
+//    return res;
+//}
+//
+//void dfs(vector<int>& v, int i, int n, int& cnt, int& moon, int& time) {
+//    if(i == n) {    // 遍历到末尾返回
+//        if(time == 60)cnt += f(moon) * f(n - moon); // 上午时间总和为60就进行统计
+//        return;
+//    }
+//    if(time > 60) return;   // 剪枝
+//
+//    // 对每个i分在上午和下午两种情况
+//
+//    // v[i]在上午
+//    time += v[i];
+//    ++moon;
+//    dfs(v, i + 1, n, cnt, moon, time);
+//
+//    // v[i]是下午
+//    time -= v[i];
+//    --moon;
+//    dfs(v, i + 1, n, cnt, moon, time);
+//    return ;
+//}
+//
+//
+//
+//int main() {
+//    int N;
+//    cin >> N;
+//    vector<int> v(N, 0);
+//    for(int i = 0; i < N; ++i) {
+//        int temp = 0;
+//        cin >> temp;
+//        v[i] = temp;
+//    }
+//
+//    int cnt = 0;
+//    int moon = 0, time = 0;  // moon记录早上时间总和， time记录早上数量
+//    dfs(v, 0, N, cnt, moon, time);  // 深搜
+//
+//    cout << cnt << endl;
+//
 //}
 
+class A{
+    public:
+
+    void f(){
+        cout << "f()" << endl;
+    }
+};
 
 
-
-#include <vector>
-#include <new>
-#include <string>
-#include <iostream>
-
-
+int main(){
+    string a = "avf";
+    const int len = a.size();
+    cout << a.size() << endl;
+}
